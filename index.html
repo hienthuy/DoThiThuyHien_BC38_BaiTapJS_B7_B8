@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        input {
+            font-size: 20px;
+            border: 3px solid pink;
+            outline: 0;
+            padding: 5px 15px;
+            width: 300px;
+            height: 30px;
+            border-radius: 3%;
+            margin: 15px 0 0 30px;
+       
+            
+        }
+        button {
+            font-size: 20px;
+            padding: 8px 30px;
+            color: white;
+            background-color: orange;
+            border: 3px solid orange;
+            margin: 15px 30px;
+            outline: orange;
+            border-radius: 3%;
+        }
+        .info {
+            background-color: pink;
+            color: black;
+            font-size: 20px;
+            width: 30%;
+            margin-top: 15px;
+            margin-left: 30px;
+            padding: 5px 0;
+            font-weight: bold;
+           text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>BÀI TẬP JS BUỔI 7-8</h1>
+    <form>
+        <input
+          type="number"
+         
+          id="enterNum"
+          placeholder="Nhập số n"
+        />
+     
+     
+        <button
+          
+          type="button"
+          onclick="getNumber()"
+        >
+          Thêm số
+        </button>
+     
+      <div >
+        👉<span id="txtArray"></span>
+      </div>
+    </form>
+
+    <h2>BT1. Tổng các số dương trong mảng.</h2>
+    <button id="btn1">Tính tổng</button>
+    <div>
+        👉 <span id="ex1"></span>
+    </div>
+    
+    <h2>BT2. Đếm có bao nhiêu số dương trong mảng.</h2>
+    <button id="btn2">Đếm số</button>
+    <div>
+        👉 <span id="ex2"></span>
+    </div>
+
+    <h2>BT3. Tìm số nhỏ nhất trong mảng.</h2>
+    <button id="btn3">Tìm số nhỏ nhất</button>
+    <div>
+        👉 <span id="ex3"></span>
+    </div>
+
+    <h2>BT4. Tìm số dương nhỏ nhất trong mảng.</h2>
+    <button id="btn4">Tìm số dương nhỏ nhất</button>
+    <div>
+        👉 <span id="ex4"></span>
+    </div>
+
+    <h2>BT5. Tìm số chẵn cuối cùng trong mảng. Nếu mảng không có giá trị chẵn thì trả về -1.</h2>
+    <button id="btn5">Tìm số chẵn</button>
+    <div>
+        👉 <span id="ex5"></span>
+    </div>
+
+    <h2>BT6. Đổi chỗ 2 giá trị trong mảng theo vị trí (Cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</h2>
+    <input id="position1" type="number" placeholder="Nhập số vị trí 1" >
+    <input id="position2" type="number" placeholder="Nhập số vị trí 2" >
+    <button id="btn6">Đổi chỗ</button>
+    <div>
+        👉 <span id="ex6"></span>
+    </div>
+
+    <h2>BT7. Sắp xếp mảng theo thứ tự tăng dần</h2>
+    <button id="btn7"> Sắp xếp </button>
+    <div>
+        👉 <span id="ex7"></span>
+    </div>
+
+    <h2>BT8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.</h2>
+    <button onclick="check()" id="btn8"> Tìm số nguyên tố </button>
+    <div>
+        👉 <span id="ex8"></span>
+    </div>
+
+
+    <h2>BT9. Nhập thêm 1 mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</h2>
+    <form>
+        <input
+          type="number"
+         
+          id="enterNum2"
+          placeholder="Nhập số n"
+        />
+     
+     
+        <button
+          
+          type="button"
+          onclick="getNumber2()"
+        >
+          Thêm số
+        </button>
+     
+      <div >
+        👉<span id="txtArray2"></span>
+      </div>
+    </form>
+    <button id="btn9"> Đếm số nguyên </button>
+    <div>
+        👉 <span id="ex9"></span>
+    </div>
+
+
+
+    <h2>BT10. So sánh số lượng số dương và số lượng số âm xem số nào nhiều hơn.</h2>
+    <button id="btn10"> So sánh </button>
+    <div>
+        👉 <span id="ex10"></span>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
